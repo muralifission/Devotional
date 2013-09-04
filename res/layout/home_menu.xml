@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/framentLayout"
+    android:weightSum="3" >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/topIv"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:scaleType="fitXY"
+            android:background="@drawable/slider_img" />
+
+        <TextView
+            android:id="@+id/TvTopTitle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView1"
+            android:layout_gravity="bottom"
+            android:background="@drawable/black_label_bg"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="5dp"
+            android:text="Ulun Danu Temple, Bali"
+            android:textColor="#ffffff"
+            android:textStyle="bold" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:weightSum="2" >
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/EventsFL"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_1" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:background="@drawable/home_screen_buttons_red_bar"
+                android:drawableRight="@drawable/arrow_icon"
+                android:gravity="center"
+                android:paddingLeft="5dp"
+                android:paddingRight="10dp"
+                android:text="Events"
+                android:textColor="#ffffff"
+                android:textSize="22dp"
+                android:textStyle="bold" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:id="@+id/GalleryFL"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_2" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:background="@drawable/home_screen_buttons_red_bar"
+                android:drawableRight="@drawable/arrow_icon"
+                android:gravity="center"
+                android:paddingLeft="5dp"
+                android:paddingRight="10dp"
+                android:text="Gallery"
+                android:textColor="#ffffff"
+                android:textSize="22dp"
+                android:textStyle="bold" />
+        </FrameLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:weightSum="2" >
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:id="@+id/AudioFL"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_3" />
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:background="@drawable/home_screen_buttons_red_bar"
+                android:drawableRight="@drawable/arrow_icon"
+                android:gravity="center"
+                android:paddingLeft="5dp"
+                android:paddingRight="10dp"
+                android:text="Audio"
+                android:textColor="#ffffff"
+                android:textSize="22dp"
+                android:textStyle="bold" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:id="@+id/VideoFL"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_4" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:background="@drawable/home_screen_buttons_red_bar"
+                android:drawableRight="@drawable/arrow_icon"
+                android:gravity="center"
+                android:paddingLeft="5dp"
+                android:paddingRight="10dp"
+                android:text="Video"
+                android:textColor="#ffffff"
+                android:textSize="22dp"
+                android:textStyle="bold" />
+        </FrameLayout>
+    </LinearLayout>
+
+</LinearLayout>
